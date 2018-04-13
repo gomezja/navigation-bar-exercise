@@ -4,9 +4,7 @@ function responsiveManager() {
 
     if (nav.className === "navbar") {
         nav.className += " responsive";
-        console.log("hello");
     } else {
         nav.className = "navbar";
-        console.log("here");
     }
 }
