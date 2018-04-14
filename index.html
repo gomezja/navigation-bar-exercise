@@ -12,7 +12,6 @@
 </head>
 <body>
     <div class="navbar"  id="nav">
-        
         <div class="nav-item">
             <a class="nav-brand" id="active" href="#">Team 09</a>
         </div>
@@ -24,7 +23,7 @@
 
             <div class="nav-item">
                 <div class="nav-dropdown">
-                    <a class="dropdown-btn" href="javascript:void(0);" onclick="dropdownClicked()">
+                    <a class="dropdown-btn" href="#" onclick="dropdownClicked()">
                         Project<i class="fas fa-caret-down fa-sm" id="dropdown-icon" ></i>
                     </a>
                     <div class="dropdown-content" id="dropdown">
@@ -45,18 +44,13 @@
             </div>
         </div>
 
-        <a class="nav-icon" href="javascript:void(0);" onclick="responsiveManager()">
-            <!-- <i class="fas fa-bars fa-sm"></i>     -->
-            <div class="hamburger-menu" id="ham" onclick="changeHam()">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
+        <!-- icon displays only when small screen size"-->
+        <a class="nav-icon" id="ham" href="#" onclick="hamburgerIconClicked()">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </a>
-
     </div>
-
-
 
     <script type="text/javascript" src="myScripts.js"></script>
 </body>

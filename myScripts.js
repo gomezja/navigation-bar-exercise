@@ -1,18 +1,26 @@
 // hamburger icon is pressed
-function responsiveManager(nav) {
+function hamburgerIconClicked() {
     var nav = document.getElementById("nav");
+    var ham = document.getElementById("ham");
     
+    // display / hide responsive dropdown menu for smaller
+    // screens and transform hamburger icon to ham / X
     if (nav.className === "navbar") {
         nav.className += " responsive";
+        ham.className += " icon-x";
     } else {
         nav.className = "navbar";
+        ham.className = "nav-icon";
     }
+
+    return false;
 }
 
 // dropdown nav item is clicked
 function dropdownClicked() {
     var drop = document.getElementById("dropdown");
 
+    // display dropdown items and rotate dropdown icon
     if (drop.className === "dropdown-content") {
         drop.className = "dropdown-content clicked";
         document.getElementById("dropdown-icon").style.transform = "rotate(180deg)";
@@ -20,14 +28,6 @@ function dropdownClicked() {
         drop.className = "dropdown-content";
         document.getElementById("dropdown-icon").style.transform = "none";
     }
-}
 
-function changeHam() {
-    var ham = document.getElementById("ham");
-
-    if (ham.className === "hamburger-menu") {
-        ham.className += " change";
-    } else {
-        ham.className = "hamburger-menu";
-    }
+    return false;
 }

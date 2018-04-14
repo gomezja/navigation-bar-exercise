@@ -14,7 +14,6 @@ body, html {
 /******************************************
 /* navigation bar
 ******************************************/
-/* navigation bar */
 .navbar {
     overflow: hidden;
     background-color: #148995;
@@ -95,13 +94,10 @@ body, html {
     transition: 0.4s;
 }
 
-
 /******************************************
 /* hamburger menu icon
 ******************************************/
-/* hamburger icon */
-.nav-icon .hamburger-menu {
-    color: #f2f2f2;
+.nav-icon {
     display: none;
     padding: 22px 18px;
 }
@@ -111,8 +107,9 @@ body, html {
 .bar3 {
     width: 20px;
     height: 2px;
-    background-color: white;
+    background-color: #f2f2f2;
 
+    -webkit-transition: 0.4s;
     transition: 0.4s;
 }
 
@@ -121,23 +118,24 @@ body, html {
     margin-top: 5px;
 }
 
+.nav-icon:hover .bar1,
+.nav-icon:hover .bar2,
+.nav-icon:hover .bar3 {
+    background-color: #b4f1f1;
+}
+
 /* transform hamburger menu to 'X' */
-.change .bar1 {
+.icon-x .bar1 {
     transform: rotate(-45deg) translate(-3px, 7px);
 }
 
-.change .bar2 {
+.icon-x .bar2 {
     opacity: 0;
 }
 
-.change .bar3 {
+.icon-x .bar3 {
     transform: rotate(45deg) translate(-3px, -7px);
 }
-
-/* .nav-icon .hamburger-menu:hover {
-    color: #b4f1f1;
-    text-decoration: underline;
-} */
 
 /******************************************
 /* media queries
@@ -168,7 +166,7 @@ body, html {
         display:none;
     }
 
-    .nav-icon .hamburger-menu {
+    .nav-icon {
         float: right;
         display: block;
     }
@@ -182,15 +180,11 @@ body, html {
     }
 
     .responsive .nav-content {
-        /* position: relative;
-        overflow: visible;*/
         display: block;
         float: none;
     }
 
     .responsive .nav-item {
-        /* position: relative; */
-        /* overflow: visible; */
         float: none;
     }
 }
