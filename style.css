@@ -46,17 +46,9 @@ body, html {
 /* hover effect for all navbar items*/
 .nav-brand:hover,
 .nav-link:hover,
-.dropdown-btn:hover,
-.nav-icon:hover {
+.dropdown-btn:hover {
     color: #b4f1f1;
     text-decoration: underline;
-}
-
-/* navbar icon */
-.nav-icon {
-    color: #f2f2f2;
-    display: none;
-    padding: 22px 18px;
 }
 
 /* current page indicator */
@@ -99,9 +91,53 @@ body, html {
 
 /* transition speed of dropdown icon rotation */
 #dropdown-icon {
-    -webkit-transition: 05s;
-    transition: 0.5s;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
 }
+
+
+/******************************************
+/* hamburger menu icon
+******************************************/
+/* hamburger icon */
+.nav-icon .hamburger-menu {
+    color: #f2f2f2;
+    display: none;
+    padding: 22px 18px;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+    width: 20px;
+    height: 2px;
+    background-color: white;
+
+    transition: 0.4s;
+}
+
+.bar2,
+.bar3 {
+    margin-top: 5px;
+}
+
+/* transform hamburger menu to 'X' */
+.change .bar1 {
+    transform: rotate(-45deg) translate(-3px, 7px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: rotate(45deg) translate(-3px, -7px);
+}
+
+/* .nav-icon .hamburger-menu:hover {
+    color: #b4f1f1;
+    text-decoration: underline;
+} */
 
 /******************************************
 /* media queries
@@ -132,7 +168,7 @@ body, html {
         display:none;
     }
 
-    .nav-icon {
+    .nav-icon .hamburger-menu {
         float: right;
         display: block;
     }

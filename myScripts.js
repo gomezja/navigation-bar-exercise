@@ -1,5 +1,5 @@
 // hamburger icon is pressed
-function responsiveManager() {
+function responsiveManager(nav) {
     var nav = document.getElementById("nav");
     
     if (nav.className === "navbar") {
@@ -19,5 +19,15 @@ function dropdownClicked() {
     } else {
         drop.className = "dropdown-content";
         document.getElementById("dropdown-icon").style.transform = "none";
+    }
+}
+
+function changeHam() {
+    var ham = document.getElementById("ham");
+
+    if (ham.className === "hamburger-menu") {
+        ham.className += " change";
+    } else {
+        ham.className = "hamburger-menu";
     }
 }
