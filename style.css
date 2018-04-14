@@ -78,10 +78,6 @@ body, html {
     z-index: 1;
 }
 
-.clicked {
-    display: block;
-}
-
 .dropdown-content a {
     float: none;
     color: black;
@@ -95,6 +91,16 @@ body, html {
 .dropdown-content a:hover {
     color: #148995;
     text-decoration: underline;
+}
+
+.clicked {
+    display: block;
+}
+
+/* transition speed of dropdown icon rotation */
+#dropdown-icon {
+    -webkit-transition: 05s;
+    transition: 0.5s;
 }
 
 /******************************************

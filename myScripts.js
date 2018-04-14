@@ -1,4 +1,4 @@
-// nav icon is pressed
+// hamburger icon is pressed
 function responsiveManager() {
     var nav = document.getElementById("nav");
     
@@ -15,7 +15,9 @@ function dropdownClicked() {
 
     if (drop.className === "dropdown-content") {
         drop.className = "dropdown-content clicked";
+        document.getElementById("dropdown-icon").style.transform = "rotate(180deg)";
     } else {
         drop.className = "dropdown-content";
+        document.getElementById("dropdown-icon").style.transform = "none";
     }
 }
