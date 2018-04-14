@@ -78,7 +78,7 @@ body, html {
     z-index: 1;
 }
 
-.nav-dropdown:hover .dropdown-content {
+.clicked {
     display: block;
 }
 
