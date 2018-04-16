@@ -5,11 +5,11 @@ function hamburgerIconClicked() {
     
     // display / hide responsive dropdown menu for smaller
     // screens and transform hamburger icon to ham / X
-    if (nav.className === "navbar") {
+    if (nav.className === "navbar box-shadow") {
         nav.className += " responsive";
         ham.className += " icon-x";
     } else {
-        nav.className = "navbar";
+        nav.className = "navbar box-shadow";
         ham.className = "nav-icon";
     }
 
