@@ -40,6 +40,9 @@ body, html {
 
     display: block;
     padding: 22px 18px;
+
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
 }
 
 /* hover effect for all navbar items*/
@@ -47,13 +50,13 @@ body, html {
 .nav-link:hover,
 .dropdown-btn:hover {
     color: #b4f1f1;
-    text-decoration: underline;
+    box-shadow: inset 0 -3px 0 0 #b4f1f1;
 }
 
 /* current page indicator */
 #active {
     color: #b4f1f1;
-    text-decoration: underline;
+    box-shadow: inset 0 -3px 0 0 #b4f1f1;
 }
 
 /******************************************
@@ -77,11 +80,14 @@ body, html {
     letter-spacing: 1.5px;
     display: block;
     text-align: left;
+
+    -webkit-transition: 0.2s;
+    transition: 0.15s;
 }
 
 .dropdown-content a:hover {
     color: #148995;
-    text-decoration: underline;
+    box-shadow: inset 0 -3px 0 0 #148995;
 }
 
 .clicked {
