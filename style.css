@@ -19,6 +19,11 @@ body, html {
     background-color: #148995;
 }
 
+/* margin on the sides of navbar */
+.nav-container {
+    margin: 0 8.33%;
+}
+
 /* main navigation content */
 .nav-content {
     float: right;
@@ -36,11 +41,10 @@ body, html {
     color: #f2f2f2;
     letter-spacing: 1.5px;
     text-decoration: none;
-    padding: 12px;
 
     display: block;
     padding: 22px 18px;
-
+    
     -webkit-transition: 0.2s;
     transition: 0.2s;
 }
@@ -105,7 +109,8 @@ body, html {
 ******************************************/
 .nav-icon {
     display: none;
-    padding: 22px 18px;
+    padding: 22px 0px;
+    margin-right: 8.33%;
 }
 
 .bar1,
@@ -146,28 +151,21 @@ body, html {
 /******************************************
 /* media queries
 ******************************************/
-@media only screen and (min-width: 870px) {
+@media only screen and (min-width: 880px) {
     .nav-item {
-        padding: 0 25px;
+        padding: 0 11px;
         /* background-color: red; */
     }
 }
 
-@media only screen and (max-width: 870px) {
+@media only screen and (max-width: 880px) {
     .nav-item {
-        padding: 0 12px;
+        padding: 0 2px;
         /* background-color: green; */
     }
 }
 
-@media only screen and (max-width: 740px) {
-    .nav-item {
-        padding: 0px;
-        /* background-color: blue; */
-    }
-}
-
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 770px) {
     .nav-content {
         display:none;
     }
@@ -176,9 +174,7 @@ body, html {
         float: right;
         display: block;
     }
-}
 
-@media only screen and (max-width: 620px) {
     .responsive .nav-icon {
         position: absolute;
         right: 0;
@@ -195,6 +191,12 @@ body, html {
     }
 }
 
+@media only screen and (max-width: 470px) {
+    .nav-container {
+        margin: 0;
+    }
+}
+
 /******************************************
 /* other
 ******************************************/
@@ -202,3 +204,14 @@ body, html {
     box-shadow: 0px 15px 15px rgba(50,50,93,0.1),
                 0px 5px 10px rgba(0,0,0,0.07);
 }
+
+button {
+    text-align: center;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        display: block;
+        padding: 10px 0;
+        margin: 0 auto;
+        border: none;
+    }
